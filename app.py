@@ -16,8 +16,6 @@ ticker = st.text_input("Enter Stock Ticker (e.g. AAPL, MSFT, TSLA)", "AAPL")
 stock = yf.Ticker(ticker)
 company_name = ticker.upper()
 
-company_name = info.get("longName", "Unknown Company")
-
 st.subheader(f"🏢 {company_name}")
 
 # 时间选择
