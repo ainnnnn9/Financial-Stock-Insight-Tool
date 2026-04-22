@@ -26,7 +26,7 @@ GitHub Repository:   https://financial-stock-insight-tool-xjtlu-acc102.streamlit
 This project runs locally using Streamlit.  
 The app can be launched using the command above.
 # 7. Project Structure
-- app.py: main interactive tool  
+- ACC102 individual test.py: main interactive tool  
 - notebook.ipynb: data exploration and testing  
 - README.md: project documentation  
 # 8. Limitations & Future Improvements
