@@ -14,7 +14,7 @@ ticker = st.text_input("Enter Stock Ticker (e.g. AAPL, MSFT, TSLA)", "AAPL")
 
 # 获取公司信息
 stock = yf.Ticker(ticker)
-info = stock.info
+company_name = ticker.upper()
 
 company_name = info.get("longName", "Unknown Company")
 
