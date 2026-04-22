@@ -22,7 +22,23 @@ if not ticker:
 stock = yf.Ticker(ticker)
 
 # 公司名
-company_name = ticker.upper()
+@st.cache_data(ttl=3600)
+def get_company_name(ticker):
+    try:
+        stock = yf.Ticker(ticker)
+
+        # 优先尝试轻量数据（比 info 稳很多）
+        name = stock.fast_info.get("shortName")
+
+        if name:
+            return name
+
+        # fallback（如果拿不到）
+        return ticker.upper()
+
+    except:
+        return ticker.upper()
+company_name = get_company_name(ticker)
 st.subheader(f"🏢 {company_name}")
 
 # 时间选择
