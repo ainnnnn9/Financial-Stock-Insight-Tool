@@ -22,7 +22,7 @@ Key variable used: daily closing price.
 2. Run the app:
    python -m streamlit run app.py
 # 6. Product Link / Demo
-GitHub Repository:   https://financial-stock-insight-tool-xjtlu-acc102.streamlit.app/
+GitHub Repository:   https://financial-stock-insight-tool-xjtlu-acc102-project.streamlit.app/
 This project runs locally using Streamlit.  
 The app can be launched using the command above.
 # 7. Project Structure
