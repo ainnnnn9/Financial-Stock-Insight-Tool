@@ -1,29 +1,38 @@
 # 📊 Financial & Stock Insight Tool
-# Project Overview
-This project is an interactive financial analysis tool built using Python and Streamlit. It allows users to explore stock price trends, view key indicators, and gain a basic understanding of company performance using market data.
-# Motivation
-Accounting students often focus on financial statements such as income statements and balance sheets. However, stock market data also reflects how the market evaluates a company’s performance.
-This project aims to provide a simple tool that helps users connect financial knowledge with market behaviour, offering an additional perspective for understanding companies.
-# Target Users
-- Accounting students  
-- Beginners in financial analysis  
-- Users who want a quick overview of stock performance  
-# Dataset
-Data is retrieved using the yfinance API (Yahoo Finance).  
-Access date: April 2026  
-# Key Features
-- 📈 Interactive stock price visualization  
-- 🏢 Company name display  
-- 📊 Key indicators (average price, volatility, current price)  
-- 📅 Flexible time selection (including custom date range)  
-- 💡 Basic interpretation of stock behaviour  
-# How to Run the Project
+# 1. Problem & User
+This project is designed for accounting students who want a simple way to observe company performance using market data.  
+While accounting focuses on financial statements, stock price trends also reflect how the market evaluates a company.
+# 2. Data
+The data is retrieved using the yfinance API (Yahoo Finance).  
+Access date: April 2026.  
+Key variable used: daily closing price.
+# 3. Methods
+- Retrieve stock data using Python (yfinance)
+- Clean and organise time-series data
+- Visualise stock price trends using Plotly
+- Calculate basic indicators (average price, volatility, current price)
+# 4. Key Findings
+- Stock prices show different levels of volatility over time  
+- The current price relative to average price can indicate recent performance  
+- Visual trends help users quickly understand market behaviour  
+# 5. How to Run
 1. Install required packages:
    pip install streamlit yfinance plotly pandas
-2. Run the application:
-   python -m streamlit run app.py  
-# Project Structure
-- app.py: Main Streamlit application  
-- notebook.ipynb: Data exploration and testing  
-# Notes
+
+2. Run the app:
+   python -m streamlit run app.py
+# 6. Product Link / Demo
+GitHub Repository:   
+
+This project runs locally using Streamlit.  
+The app can be launched using the command above.
+# 7. Project Structure
+- app.py: main interactive tool  
+- notebook.ipynb: data exploration and testing  
+- README.md: project documentation  
+# 8. Limitations & Future Improvements
+- Only basic indicators are included  
+- No integration with financial statements yet  
+- Future improvements could include financial ratios or multi-company comparison  
+# 9. Notes
 This tool provides simplified analysis for learning purposes and does not represent professional financial advice.
